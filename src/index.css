@@ -1,0 +1,117 @@
+/* Reset léger */
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question {
+  background: #1c1c2b;
+  border-radius: 16px;
+  padding: 24px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.timer p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nombre-question, p {
+  text-align: center;
+  margin: 8px 0;
+}
+
+h3 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.reponses {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.reponses button {
+  background: #2e2e4d;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reponses button:hover {
+  background: #4f46e5;
+  transform: scale(1.02);
+}
+
+button {
+  background: #4f46e5;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 8px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #6366f1;
+  transform: translateY(-1px);
+}
+
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin: 6px;
+  font-size: 16px;
+}
+
+.loading {
+  font-size: 16px;
+}
+
+p:last-child {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
