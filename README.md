@@ -9,6 +9,12 @@ Currently, two official plugins are available:
 
 ## React Compiler
 
+```
+- git clone https://github.com/DuDuch23/quizz-app-react.git
+- cd quizz-app-react
+- npm i
+```
+
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
 ## Expanding the ESLint configuration
